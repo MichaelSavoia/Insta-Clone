@@ -20,8 +20,7 @@
 			picData.postPic(formData);
 			console.log(formData)
 		};
-
-
+		
     });
 
 })();

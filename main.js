@@ -40,7 +40,7 @@ appConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'
 
 			// image details state
 			.state('detailsPage', {
-				url: '/details/:_id',
+				url: '/details/:id',
 				views: {
 					'content': {
 						templateUrl: 'partials/details.html',

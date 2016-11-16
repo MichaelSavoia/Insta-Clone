@@ -2,25 +2,20 @@
 
   angular
     .module('app')
-    .controller('singlePicController', function (picData){
+    .controller('singlePicController', function (picData, $stateParams){
 
 		let vm = this;
 
+		id = $stateParams.id
+
 		// calls data from foundry
-		vm.allPics = picData.getPics();
+		let pic = picData.getsinglePic(id);
 
-		// sets data when getPics function is finished
-		vm.allPics.then(function(imageData){
-			vm.pics = imageData.data.images;
-			console.log(vm.pics)
+		// sets data when getPic function is finished
+		pic.then(function(imageData){
+			vm.pic = imageData.data;
+			console.log(vm.pic)
 		});
-
-		vm.newPic = function(formData){
-			formData.id = Date.now;
-			picData.postPic(formData);
-			console.log(formData)
-		};
-
 
     });
 

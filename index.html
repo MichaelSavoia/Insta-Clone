@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app='app'>
 <head>
-	<title>Instagrom</title>
+	<title>Instapup</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
@@ -15,12 +15,14 @@
 
 
 <header class='container'>
-	<h1>Instagrom</h1>
+	<div class="row">
+		<h1>Instapup</h1>
 
-	<ul>
-		<li><a ui-sref='home'>Home</a></li>
-		<li><a ui-sref='newPage'>Post an Image</a></li>
-	</ul>
+		<ul>
+			<li><a ui-sref='home'>Home</a></li>
+			<li><a ui-sref='newPage'>Post a Pup</a></li>
+		</ul>
+	</div>
 </header>
 
 
@@ -52,6 +54,7 @@
 
 <!-- Controllers -->
 <script src="controllers/controller.js"></script>
+<script src="controllers/singleImageController.js"></script>
 
 </body>
 

@@ -40,6 +40,8 @@
                     headers: { 'X_CSRF_TOKEN': 'michael' },
                     url: `http://instagramcloneclass.herokuapp.com/images/${id}`
                 });
+
+                return call;
             }
 
 
