@@ -1,0 +1,16 @@
+<div class="container">
+	<div class="row">
+
+		<form ng-submit='controller.newPic(controller.form)'>
+			<h4>Image URL</h4>
+			<input type="text" ng-model='controller.form.url' placeholder="img url...">
+			<h4>Title</h4>
+			<input type="text" ng-model='controller.form.title' placeholder="title here...">
+			<h4>Description</h4>
+			<input type="textArea" ng-model='controller.form.description' placeholder="description here...">
+			<button type="submit">Post New Image</button>
+		</form>
+		
+	</div>
+	
+</div>
