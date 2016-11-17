@@ -6,7 +6,8 @@
 
 		let vm = this;
 
-		id = $stateParams.id
+		id = $stateParams.id;
+		index = $stateParams.index;
 
 		// calls data from foundry
 		let pic = picData.getsinglePic(id);
@@ -16,6 +17,15 @@
 			vm.pic = imageData.data;
 			console.log(vm.pic)
 		});
+
+		// vm.deletePic = function(id, index){
+
+		// }
+
+		vm.likePic = function(id,pic){
+			let response = picData.likePic(id);
+			pic.likes++;
+		}
 
     });
 

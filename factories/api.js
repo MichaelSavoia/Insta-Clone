@@ -44,12 +44,34 @@
                 return call;
             }
 
+            // likes an image
+            const likePic = function(imageid){
+                var call = $http({
+                    method: 'POST',
+                    data: {imageid},
+                    url: `http://instagramcloneclass.herokuapp.com/images/vote`,
+                })
+
+                return call;
+            }
+
+            // deletes a single image from the array
+            // const deletePic = function(id){
+            //     var call = $http({
+            //         method: 'GET',
+            //         headers: { 'X_CSRF_TOKEN': 'michael' },
+            //         url: `http://instagramcloneclass.herokuapp.com/images/${id}`
+            //     });
+
+            // }
+
 
             // exposes functions
             return{
                 getPics,
                 getsinglePic,
                 postPic,
+                likePic,
             }
 
 

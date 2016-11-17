@@ -1,0 +1,22 @@
+.pic-block {
+  position: relative;
+  margin-top: 80px; }
+  .pic-block h2 {
+    text-align: center; }
+  .pic-block img {
+    border-radius: 20px;
+    text-align: center;
+    width: 100%; }
+  .pic-block .likes {
+    position: absolute;
+    bottom: 56px;
+    left: 20px;
+    color: white; }
+    .pic-block .likes i {
+      font-size: 3rem; }
+    .pic-block .likes span {
+      font-size: 2.5rem;
+      margin-left: 10px;
+      margin-bottom: 10px; }
+  .pic-block h4 {
+    padding: 0 5%; }

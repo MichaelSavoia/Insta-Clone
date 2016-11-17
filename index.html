@@ -6,21 +6,23 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://use.fontawesome.com/5918b9f339.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
-<body>
+<body ng-cloak>
 
 
-<header class='container'>
+<header class='container-fluid z-depth-2'>
 	<div class="row">
+		<img src="http://www.murga-linux.com/puppy/viewtopic.php?mode=attach&id=8464&sid=5eb4fa8dcaea0ffbdadb7ff55b8b0898" alt="puppy logo">
 		<h1>Instapup</h1>
 
 		<ul>
-			<li><a ui-sref='home'>Home</a></li>
-			<li><a ui-sref='newPage'>Post a Pup</a></li>
+			<li ui-sref='home'>Home</li>
+			<li ui-sref='newPage'>Post a Pup</li>
 		</ul>
 	</div>
 </header>
@@ -50,11 +52,11 @@
 <script src="main.js" type="text/javascript"></script>
 
 <!-- Factories -->
-<script src="factories/api.js"></script>
+<script src="/factories/api.js"></script>
 
 <!-- Controllers -->
-<script src="controllers/controller.js"></script>
-<script src="controllers/singleImageController.js"></script>
+<script src="/controllers/controller.js"></script>
+<script src="/controllers/singleImageController.js"></script>
 
 </body>
 

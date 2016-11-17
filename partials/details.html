@@ -1,8 +1,14 @@
+<link rel="stylesheet" type="text/css" href="/css/details.css">
+
 <div class="container">
 	<div class="row">
-		<div>
+		<div class="pic-block">
 			<h2>{{controller.pic.title}}</h2>
-			<img src="{{controller.pic.url}}">
+			<img class="z-depth-3" src="{{controller.pic.url}}">
+			<div class="likes">
+				<i ng-click='controller.likePic(controller.pic._id,controller.pic)' class="material-icons">thumb_up</i>
+				<span>{{controller.pic.likes}}</span>
+			</div>
 			<h4>{{controller.pic.description}}</h4>
 		</div>
 		

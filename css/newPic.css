@@ -1,5 +1,7 @@
-form input, form h4 {
-  width: 80%; }
-
-form button {
-  display: block; }
+.container {
+  margin-top: 80px; }
+  .container form input, .container form h4 {
+    width: 80%; }
+  .container form button {
+    margin-top: 30px;
+    display: block; }

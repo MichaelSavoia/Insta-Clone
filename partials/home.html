@@ -1,11 +1,16 @@
 <link rel="stylesheet" type="text/css" href="css/home.css">
 
-<div class="container">
+<div class="container-fluid allImages">
 
 	<div class="row">
-		<div class="col-sm-4 col-md-3 image" ng-repeat="pic in controller.pics track by $index">
-			<h3 ui-sref='detailsPage({id:pic._id})'>{{pic.title}}</h3>
-			<img src="{{pic.url}}">
+		<div class="col-sm-3 pic-block" ng-repeat="pic in controller.pics track by $index">
+			<h4 ui-sref='detailsPage({id:pic._id})'>{{pic.title}}</h4>
+			<div class="pic z-depth-2" ng-click='controller.likePic(pic._id,pic)' ng-style="{'background-image': 'url({{pic.url}})'}"></div>
+			<!-- <img ng-click='controller.likePic(pic._id,pic)' src="{{pic.url}}"> -->
+			<div class="likes">
+				<i ng-click='controller.likePic(pic._id,pic)' class="tiny material-icons">thumb_up</i>
+				<span>{{pic.likes}}</span>
+			</div>
 		</div>
 	</div>
 	

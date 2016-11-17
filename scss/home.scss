@@ -1,6 +1,29 @@
-.image{
-	img{
-		width: 100%;
-		border-radius: 10px;
+.allImages{
+	margin-top: 80px;
+}
+
+.pic{
+	max-width: 100%;
+	height: 200px;
+	border-radius: 20px;
+	background-position: center;
+	background-size: cover;
+}
+
+.pic-block{
+	position: relative;
+
+	.likes{
+		position: absolute;
+		bottom: 5px;
+		left: 30px;
+		z-index: 400;
+		color: white;
+	}
+}
+
+@media (max-width:768px){
+	.pic{
+		min-height: 400px;
 	}
 }
